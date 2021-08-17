@@ -1,0 +1,55 @@
+<h2>Bigger Together</h2>
+<div class="for_info_only story">
+ <p>
+  — But I’m so small! Why would you need me?
+ </p>
+ <p>
+  — Listen, even the smallest warrior can make an army so much more powerful if he’s in a right place. And even the strongest one can weaken the whole formation if he stands in the wrong rank.
+ </p>
+</div>
+<p>
+ Your mission here is to find a difference between the maximally positive and maximally negative numbers. Those numbers can be found by concatenating the given array of numbers.
+</p>
+<p>
+ Let’s check an example. If you have numbers 1,2,3, then 321 is the maximum number, and 123 - is the minimum. The difference between those numbers is 198. But if you have numbers 4, 3 and 12 then 4312 is the maximum number, and 1234 - is the minimum. As you can see, a simple order is not what we are looking for here.
+</p>
+<p>
+ <strong>
+  Input:
+ </strong>
+ A list of positive integers.
+</p>
+<p>
+ <strong>
+  Output:
+ </strong>
+ An integer.
+</p>
+<div class="for_info_only">
+ <p>
+  <strong>
+   Example:
+  </strong>
+ </p>
+ 
+ <pre class="brush: python">bigger_together([1,2,3,4]) == 3087 # 4321 - 1234
+bigger_together([1,2,3,4, 11, 12]) == 32099877 # 43212111 - 11112234
+bigger_together([0, 1]) == 9 # 10 - 01
+bigger_together([100]) == 0 # 100 - 100</pre>
+ 
+</div>
+<p>
+ <strong>
+  Precondition:
+ </strong>
+ <i>
+  All elements of the list can't be less than 0
+ </i>
+ <br/>
+ <i>
+  The list can't be empty
+ </i>
+</p>
+
+
+<p><a href="https://py.checkio.org/en/mission/bigger-together">See the task on CheckiO</a></p>

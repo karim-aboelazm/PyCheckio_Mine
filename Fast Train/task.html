@@ -1,0 +1,85 @@
+<h2>Fast Train</h2>
+<p>
+ You are planning the train schedule and you want to know the minimum time of traveling between the stations.
+</p>
+<p>
+ Each section of the rail between stations is given in the list.
+Each section is a tuple of distance and speed limit (both are integers).
+You can change the speed ( +1. -1 and ± 0 ) at the start and every minute after that.
+The train runs by the same amount as the speed value in a minute.
+ <br/>
+ Note: This means that a train with a speed 2 will travel a distance 2 before another minute passes and its speed can be changed again.
+</p>
+<ul>
+ <li>
+  Starting speed is 0.
+ </li>
+ <li>
+  Speed limit is set for each section of the rail.
+        You don't exceed it.
+ </li>
+ <li>
+  You must reach the target station at speed 1 (because it’s necessary to stop at the station).
+ </li>
+</ul>
+<p>
+ You should return the minimum time (minutes) as an integer.
+</p>
+<p style="text-align: left;">
+ <img alt="example" src="https://d17mnqrx9pmt3e.cloudfront.net/media/missions/media/8efe49ff6ce04483bf80870c6ecc180f/tests_example.png" style="max-height: 269px" title="example"/>
+</p>
+<div class="for_info_only">
+ <p>
+  <strong>
+   Example:
+  </strong>
+ </p>
+ 
+ <pre class="brush: python">
+fast_train([(4, 3)]) == 3 # (1, 2, 1)
+fast_train([(9, 5)]) == 5 # (1, 2, 3, 2, 1)
+fast_train([(5, 5), (4, 2)]) == 6 # e.g. (1, 2, 2, 2, 1, 1)
+</pre>
+ 
+</div>
+<p>
+ <strong>
+  Input:
+ </strong>
+ 
+A list of the section of the rail. Each section is a tuple of distance (as an integer) and speed limit (as an integer). 
+
+</p>
+<p>
+ <strong>
+  Output:
+ </strong>
+ The minimum time (minutes) as an integer.
+</p>
+<p>
+ <strong>
+  How it is used:
+ </strong>
+ <br/>
+ For efficient acceleration and deceleration.
+</p>
+<p>
+ <strong>
+  Precondition:
+ </strong>
+ <br/>
+ <ul>
+  <li>
+   distance &gt; 0
+  </li>
+  <li>
+   speed limit &gt; 0
+  </li>
+  <li>
+   len(section) &gt; 0
+  </li>
+ </ul>
+</p>
+
+
+<p><a href="https://py.checkio.org/en/mission/fast-train">See the task on CheckiO</a></p>

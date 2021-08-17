@@ -1,0 +1,31 @@
+type: checkiO
+files:
+- name: mission.py
+  visible: true
+  text: "# Your optional code here\n# You can import some modules or create additional\
+    \ functions\n\n\ndef checkio(number: int) -> str:\n    # Your code here\n    #\
+    \ It's main function. Don't remove this function\n    # It's using for auto-testing\
+    \ and must return a result for check.\n\n    # replace this for solution\n   \
+    \ return 'Fizz Buzz'\n\n# Some hints:\n# Convert a number in the string with str(n)\n\
+    \n# These \"asserts\" using only for self-checking and not necessary for auto-testing\n\
+    if __name__ == '__main__':\n    print('Example:')\n    print(checkio(15))\n  \
+    \  \n    assert checkio(15) == \"Fizz Buzz\", \"15 is divisible by 3 and 5\"\n\
+    \    assert checkio(6) == \"Fizz\", \"6 is divisible by 3\"\n    assert checkio(5)\
+    \ == \"Buzz\", \"5 is divisible by 5\"\n    assert checkio(7) == \"7\", \"7 is\
+    \ not divisible by 3 or 5\"\n    print(\"Coding complete? Click 'Check' to review\
+    \ your tests and earn cool rewards!\")\n"
+  learner_created: false
+status: Unchecked
+code: "# Your optional code here\n# You can import some modules or create additional\
+  \ functions\n\n\ndef checkio(number: int) -> str:\n    # Your code here\n    # It's\
+  \ main function. Don't remove this function\n    # It's using for auto-testing and\
+  \ must return a result for check.\n\n    # replace this for solution\n    return\
+  \ 'Fizz Buzz'\n\n# Some hints:\n# Convert a number in the string with str(n)\n\n\
+  # These \"asserts\" using only for self-checking and not necessary for auto-testing\n\
+  if __name__ == '__main__':\n    print('Example:')\n    print(checkio(15))\n    \n\
+  \    assert checkio(15) == \"Fizz Buzz\", \"15 is divisible by 3 and 5\"\n    assert\
+  \ checkio(6) == \"Fizz\", \"6 is divisible by 3\"\n    assert checkio(5) == \"Buzz\"\
+  , \"5 is divisible by 5\"\n    assert checkio(7) == \"7\", \"7 is not divisible\
+  \ by 3 or 5\"\n    print(\"Coding complete? Click 'Check' to review your tests and\
+  \ earn cool rewards!\")\n"
+seconds_from_change: 9223372036854775807

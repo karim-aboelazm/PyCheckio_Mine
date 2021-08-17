@@ -1,0 +1,130 @@
+<h2>Escape</h2>
+<!-- Describe task in general -->
+<p>
+ There is an open jar and a fly inside it.
+    That fly is flying from side to side frantically because it really wants to get away from there.
+    Your task is to estimate whether it will succeed in its attempts (return True) or not (return False).
+</p>
+<p style="text-align: center;">
+ <img alt="example" src="https://d17mnqrx9pmt3e.cloudfront.net/media/missions/media/7f6d48c6da2b4c6c8218654c6046cf77/example.png" style="max-height: 250px" title="fly's in the jar"/>
+</p>
+<p align="justify">
+ So what do we got? The jar is represented by a rectangle in the drawing above. It has width
+ <b>
+  W
+ </b>
+ and height
+ <b>
+  H
+ </b>
+ .
+    The jar has a hole of the size
+ <b>
+  d
+ </b>
+ . Our fly can escape through it. The hole is always placed on the top of the jar and the jar is symmetrical.
+    Point
+ <b>
+  O
+ </b>
+ is the origin, the y-axis matches the jar's left side and the x-axis matches the jar's bottom side. The wall thickness is negligible.
+</p>
+<p align="justify">
+ Initial position of the fly is defined by
+ <b>
+  x0
+ </b>
+ and
+ <b>
+  y0
+ </b>
+ , which are assigned arbitrary. But it's guaranteed that the fly is inside the jar by the time we start to observe it.
+    In the very beginning the fly is flying linearly,
+ <b>
+  Vx
+ </b>
+ and
+ <b>
+  Vy
+ </b>
+ are a horizontal and vertical components of the velocity vector respectively.
+    When the fly hits a wall, it deflects from it and fly in the opposite direction (like a billiard ball). The drawing above illustrates how it works.
+    Also, there's one tiny detail: after each collision the fly loses 5% of its initial stamina, getting tired (velocity remains the same though). So after 20 collisions the fly becomes completely exhausted.
+    The fly's size is negligible.
+</p>
+<!-- Explain input and output values -->
+<p>
+ <strong>
+  Input:
+ </strong>
+ Two lists of integers:
+ <ul>
+  <li>
+   the first contains jar's dims [W, H, d]
+  </li>
+  <li>
+   the second contains fly's characteristics [x0, y0, vx, vy]
+  </li>
+ </ul>
+</p>
+<p>
+ <strong>
+  Output:
+ </strong>
+ True or False.
+</p>
+<!-- Give some usage examples -->
+<div class="for_info_only">
+ <p>
+  <strong>
+   Example:
+  </strong>
+ </p>
+ 
+ <pre class="brush: python">escape([1000, 500, 200], [0, 0, 100, 0]) == False
+escape([1000, 500, 200], [450, 50, 0, -100]) == True
+escape([1000, 1000, 200], [450, 1000, 100, 0]) == False
+escape([1000, 1000, 200],
+ [250, 250, -10, -50]) == False
+escape([1000, 2000, 200], [20, 35, 100, 175]) == True
+</pre>
+ 
+</div>
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<p>
+ <strong>
+  Precondition:
+ </strong>
+ <br/>
+ All dimensions are given in abstract units, velocities are given in units/sec.
+ <ul>
+  <li>
+   W ∈ [100; 1000]
+  </li>
+  <li>
+   H ∈ [W; 4W]
+  </li>
+  <li>
+   d ∈ [0.1W; 0.8W]
+  </li>
+  <li>
+   x0 ∈ [0; W]
+  </li>
+  <li>
+   y0 ∈ [0; H]
+  </li>
+  <li>
+   vx ∈ (-2W; 2W)
+  </li>
+  <li>
+   vy ∈ (-2H; 2H)
+  </li>
+  <li>
+   V != 0
+  </li>
+ </ul>
+</p>
+
+
+<p><a href="https://py.checkio.org/en/mission/escape">See the task on CheckiO</a></p>

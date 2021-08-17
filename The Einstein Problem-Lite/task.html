@@ -1,0 +1,169 @@
+<h2>The Einstein Problem-Lite</h2>
+<p>
+ <a href="http://en.wikipedia.org/wiki/Zebra_Puzzle">
+  The Einstein's Puzzle
+ </a>
+ is a well-known logic puzzle.
+    It is often called Einstein's Puzzle because it is said to have been invented by Albert Einstein as a boy.
+    However, there is no known evidence for Einstein's or Carroll's authorship.
+    This puzzle can be modified with various conditions to produce a variety of similar puzzles. For starters, we will
+    solve a simplified version of the puzzle.
+</p>
+<p>
+ There are 5 houses on street which are painted 5 different colors:
+ <b>
+  blue
+ </b>
+ ,
+ <b>
+  green
+ </b>
+ ,
+ <b>
+  red
+ </b>
+ ,
+ <b>
+  white
+ </b>
+ and
+ <b>
+  yellow
+ </b>
+ .
+ <br/>
+ In each house lives a person of a different nationality:
+ <b>
+  Brit
+ </b>
+ ,
+ <b>
+  Dane
+ </b>
+ ,
+ <b>
+  German
+ </b>
+ ,
+ <b>
+  Norwegian
+ </b>
+ and
+ <b>
+  Swede
+ </b>
+ .
+ <br/>
+ These people drink a certain beverage:
+ <b>
+  beer
+ </b>
+ ,
+ <b>
+  coffee
+ </b>
+ ,
+ <b>
+  milk
+ </b>
+ ,
+ <b>
+  tea
+ </b>
+ and
+ <b>
+  water
+ </b>
+ .
+ <br/>
+ Smoke a certain brand of cigarettes:
+ <b>
+  Rothmans
+ </b>
+ ,
+ <b>
+  Dunhill
+ </b>
+ ,
+ <b>
+  PallMall
+ </b>
+ ,
+ <b>
+  Winfield
+ </b>
+ and
+ <b>
+  Marlboro
+ </b>
+ .
+ <br/>
+ They keep a certain pet:
+ <b>
+  cat
+ </b>
+ ,
+ <b>
+  bird
+ </b>
+ ,
+ <b>
+  dog
+ </b>
+ ,
+ <b>
+  fish
+ </b>
+ and
+ <b>
+  horse
+ </b>
+ .
+</p>
+<p>
+ None of the owners have the same pet, smoke the same brand of cigarette, or drink the same beverage.
+</p>
+<p>
+ You are given a set of "relations". Each relation connects two identifiers in the owner relationships. For example:
+    "Norwegian-Dunhill" indicates that the Norwegian smokes only Dunhill. "5-dog" indicates that the owner of the 5th
+    house also owns a dog. Similar to Einstein's version of the problem, we will use only these types of relations.
+</p>
+<p>
+ The second argument is a question which you need to answer. The question is represented as two words separated by
+    dash. The first word is a characteristic of the owner while the second is a characteristic (
+ <strong>
+  number,
+    color,nationality, beverage, cigarettes or pet
+ </strong>
+ ) you need to determine based on the first characteristic. For
+    example: "horse-cigarettes" asks"What the cigarettes do the owner of the horse smoke?" or "green-number" asks "What
+    is the street number of the green house?".
+</p>
+<p>
+ <strong>
+  Input:
+ </strong>
+ Two arguments. Relations as a tuple of strings and a question as a string.
+</p>
+<p>
+ <strong>
+  Output:
+ </strong>
+ The answer as a string.
+</p>
+<p>
+ <strong>
+  How it is used:
+ </strong>
+ This mission teaches you something about constraint satisfaction problems within the classic context of an Einstein riddle.
+</p>
+<p>
+ <strong>
+  Precondition:
+ </strong>
+ <br/>
+ All questions have only one possible answer.
+</p>
+
+
+<p><a href="https://py.checkio.org/en/mission/einstein-problem">See the task on CheckiO</a></p>

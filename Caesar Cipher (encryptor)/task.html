@@ -1,0 +1,67 @@
+<h2>Caesar Cipher (encryptor)</h2>
+<!-- Describe task in general -->
+<p>
+ This mission is the part of the set. Another one -
+ <a href="https://py.checkio.org/en/mission/caesar-cipher-decryptor/">
+  Caesar cipher decriptor
+ </a>
+ .
+</p>
+<p>
+ Your mission is to encrypt a secret message (text only, without special chars like "!", "&amp;", "?" etc.) using Caesar cipher where each letter of input text is replaced by another that stands at a fixed distance. For example ("a b c", 3) == "d e f"
+</p>
+<p style="text-align: center;">
+ <img alt="example" src="https://d17mnqrx9pmt3e.cloudfront.net/media/missions/media/4732ed3675884800a345142a7d3607ba/drawing.png" style="max-height: 80px" title="Caesar encryptor"/>
+</p>
+<!-- Explain input and output values -->
+<p>
+ <strong>
+  Input:
+ </strong>
+ A secret message as a string (lowercase letters only and white spaces)
+</p>
+<p>
+ <strong>
+  Output:
+ </strong>
+ The same string, but encrypted
+</p>
+<!-- Put some usage examples -->
+<div class="for_info_only">
+ <p>
+  <strong>
+   Example:
+  </strong>
+ </p>
+ 
+ <pre class="brush: python">to_encrypt("a b c", 3) == "d e f"
+to_encrypt("a b c", -3) == "x y z"
+to_encrypt("simple text", 16) == "iycfbu junj"
+to_encrypt("important text", 10) == "swzybdkxd dohd"
+to_encrypt("state secret", -13) == "fgngr frperg"
+</pre>
+ 
+</div>
+<!-- Here you can explain how it can be used in development and what is usage of this. -->
+<!-- The section is optional -->
+<p class="for_info_only">
+ <strong>
+  How it is used:
+ </strong>
+ For cryptography and to save important information.
+</p>
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+ <strong>
+  Precondition
+ </strong>
+ :
+ <br/>
+ 0 &lt; len(text) &lt; 50
+ <br/>
+ -26 &lt; delta &lt; 26
+</p>
+
+
+<p><a href="https://py.checkio.org/en/mission/caesar-cipher-encryptor">See the task on CheckiO</a></p>
